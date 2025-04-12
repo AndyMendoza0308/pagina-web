@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página Web</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3284524044565432"
-     crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-3284524044565432">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -44,17 +43,42 @@
     main {
       display: flex;
       padding: 1rem;
+      gap: 10px;
     }
 
-    article {
-      flex: 5;
+    .ads{
+      flex: 1;
       padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: #f4f4f4;
+    }
+
+
+    article {
+      flex: 2;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: #e4e3e3;
+    }
+
+    article p{
+      font-size: 18px;
+      padding: 10px 10px 10px 10px;
+      text-align: justify;
+    }
+
+    article{
+      position: relative;
+      text-align: center;
     }
 
     aside {
       flex: 1;
       background-color: #f4f4f4;
       padding: 1rem;
+      min-height: auto;
+      max-width: 400px;
+      border-radius: 0.5rem;
     }
 
     footer {
@@ -62,7 +86,7 @@
       color: white;
       text-align: center;
       padding: 10px 0px 10px;
-      position: absolute;
+      position: relative;
       bottom: 0;
       width: 100%;
       align-content: center;
@@ -84,14 +108,42 @@
   </nav>
 
   <main>
+    
+    <div class="ads">
+      <img src="images/torre.jpg" width="100%">
+      <ins class="adsbygoogle"
+     data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
+     data-ad-slot="1234567890"
+     data-ad-format="auto"
+     data-full-width-responsive="true">
+    </ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+
     <article>
-      <h2>Contenido Principal</h2>
-      <p>Aquí va el contenido principal de la página web.</p>
+      <h2>La Torre Eiffel</h2>
+      <p>La Torre Eiffel es una icónica estructura ubicada en París, Francia. Fue diseñada por 
+        el ingeniero Gustave Eiffel y completada en 1889 como parte de la Exposición Universal para 
+        conmemorar el centenario de la Revolución Francesa. Con una altura de 330 metros (1,083 pies), 
+        fue la estructura más alta del mundo hasta 1930, y sigue siendo una de las más altas de París. <br><br>
+
+        La torre está construida de hierro forjado, y su diseño se caracteriza por una estructura de rejilla 
+        abierta que le da una apariencia esbelta y ligera, a pesar de su tamaño. Está formada por cuatro pilares 
+        curvados que se elevan hacia un único punto en la cima, creando una forma de pirámide invertida. La torre 
+        tiene tres niveles accesibles al público, desde los cuales se pueden obtener impresionantes vistas panorámicas de la ciudad.<br><br>
+        
+        La Torre Eiffel es uno de los monumentos más visitados del mundo, atrayendo millones de turistas cada año. Además, 
+        se ha convertido en un símbolo mundial de la ingeniería y la arquitectura, así como en un emblema de la ciudad de París.</p>
+
+      <img src="images/torre_grande.jpg" width="50%">
     </article>
 
     <aside>
       <h3>Barra Lateral</h3>
       <p>Contenido adicional o enlaces.</p>
+      <img src="images/torre.jpg" width="100%">
     </aside>
   </main>
 
